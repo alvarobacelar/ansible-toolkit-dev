@@ -4,6 +4,7 @@ galaxy_info:
   description: My Role install tools dev laptop
   company: alvaro's
   min_ansible_version: 2.4
+  license: "license BSD"
   platforms:
     - name: Ubuntu
       versions:
