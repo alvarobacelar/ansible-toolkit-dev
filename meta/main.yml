@@ -3,10 +3,13 @@ galaxy_info:
   description: My Role install tools dev laptop
   company: alvaro's
   
+  min_ansible_version: 2.4
   platforms:
     - name: Ubuntu
       versions:
-        - 18.04
+        - trusty
+        - xenial
+        - bionic
 
   galaxy_tags:
      - tools
