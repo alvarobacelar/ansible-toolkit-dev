@@ -1,0 +1,32 @@
+---
+
+- include: configure.yml
+  become: true
+
+- include: dependecies.yml
+  become: true
+
+- name: install packages
+  apt:
+    name: ['code', 'vlc', 'virtualbox', 'vagrant', 'mysql-server']
+    state: present
+    update_cache: true
+  become: true
+
+- include: chrome.yml
+  become: true
+
+- include: terminator.yml
+  become: true
+
+- include: obs-studio.yml
+  become: true
+
+- include: kdenvile.yml
+  become: true
+
+- include: terraform.yml
+  become: true
+
+- include: kubectl.yml
+  become: true

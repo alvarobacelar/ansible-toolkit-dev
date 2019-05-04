@@ -1,0 +1,12 @@
+---
+
+- name: add repo obs-studio
+  apt_repository:
+    repo: 'ppa:obsproject/obs-studio'
+    state: present
+
+- name: install terminator
+  apt:
+    name: obs-studio
+    state: present
+    update_cache: true

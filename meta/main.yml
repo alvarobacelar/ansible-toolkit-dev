@@ -1,0 +1,17 @@
+galaxy_info:
+  author: Alvaro Bacelar
+  description: My Role install tools dev laptop
+  company: alvaro's
+  
+  platforms:
+    - name: Ubuntu
+      versions:
+        - 18.04
+
+  galaxy_tags:
+     - tools
+     - dev
+
+dependencies:
+  - alvarobacelar.install_docker
+  - geerlingguy.java

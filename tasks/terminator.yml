@@ -1,0 +1,12 @@
+---
+
+- name: install terminator
+  apt_repository:
+    repo: 'ppa:gnome-terminator'
+    state: present
+
+- name: install terminator
+  apt:
+    name: terminator
+    state: present
+    update_cache: true

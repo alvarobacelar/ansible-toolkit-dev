@@ -1,0 +1,5 @@
+---
+# vars file for toolkit-dev
+
+_link_terraform: https://releases.hashicorp.com/terraform/0.11.13/terraform_0.11.13_linux_amd64.zip
+_link_kubectl: https://storage.googleapis.com/kubernetes-release/release/v1.14.1/bin/linux/amd64/kubectl
