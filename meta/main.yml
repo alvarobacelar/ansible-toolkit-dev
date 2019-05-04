@@ -1,8 +1,8 @@
+---
 galaxy_info:
   author: Alvaro Bacelar
   description: My Role install tools dev laptop
   company: alvaro's
-  
   min_ansible_version: 2.4
   platforms:
     - name: Ubuntu
@@ -12,8 +12,8 @@ galaxy_info:
         - bionic
 
   galaxy_tags:
-     - tools
-     - dev
+    - tools
+    - dev
 
 dependencies:
   - alvarobacelar.install_docker

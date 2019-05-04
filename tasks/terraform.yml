@@ -4,4 +4,4 @@
   unarchive:
     src: '{{ _link_terraform }}'
     dest: /usr/local/bin
-    remote_src: yes
+    remote_src: true

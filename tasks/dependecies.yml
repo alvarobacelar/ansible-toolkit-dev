@@ -5,7 +5,7 @@
     name: ['apt-transport-https', 'python-pip', 'apt-utils']
     state: present
     update_cache: true
- 
+
 - name: install deps pip
   pip:
     name:

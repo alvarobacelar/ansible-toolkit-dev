@@ -22,7 +22,7 @@
 - include: obs-studio.yml
   become: true
 
-- include: kdenvile.yml
+- include: kdenlive.yml
   become: true
 
 - include: terraform.yml
