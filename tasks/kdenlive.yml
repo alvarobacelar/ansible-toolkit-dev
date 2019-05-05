@@ -3,7 +3,7 @@
 - name: add repo kdenlive
   apt_repository:
     repo: 'ppa:kdenlive/kdenlive-stable'
-    state: present
+    codename: bionic
 
 - name: install kdenlive
   apt:

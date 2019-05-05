@@ -2,31 +2,44 @@
 
 - include: configure.yml
   become: true
+  tags:
+    - conf
 
 - include: dependecies.yml
   become: true
+  tags:
+    - deps
 
 - name: install packages
   apt:
-    name: ['code', 'vlc', 'virtualbox', 'vagrant', 'mysql-server']
+    name: ['terminator', 'vlc', 'virtualbox', 'vagrant', 'mysql-server','git']
     state: present
     update_cache: true
   become: true
+  tags:
+    - package
 
 - include: chrome.yml
   become: true
-
-- include: terminator.yml
-  become: true
+  tags:
+    - chrome
 
 - include: obs-studio.yml
   become: true
+  tags:
+    - obs
 
 - include: kdenlive.yml
   become: true
+  tags:
+    - kdenlive
 
 - include: terraform.yml
   become: true
+  tags:
+    - terraform
 
 - include: kubectl.yml
   become: true
+  tags:
+    - kubectl

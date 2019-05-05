@@ -2,12 +2,12 @@
 
 - name: install deps
   apt:
-    name: ['apt-transport-https', 'python-pip', 'apt-utils']
+    name: ['apt-transport-https', 'python-pip', 'apt-utils', 'python-dev', 'python-pyrex', 'unzip']
     state: present
     update_cache: true
 
-- name: install deps pip
-  pip:
-    name:
-      - molecule
-      - docker
+    #- name: install deps pip
+    #  pip:
+    #    name:
+    #      - molecule
+    #      - docker
